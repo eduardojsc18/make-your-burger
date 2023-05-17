@@ -22,7 +22,7 @@
                         v-model="bread"
                         required
                 >
-                    <option value="" disabled>Selecione o pão</option>
+                    <option :value="null" disabled>Selecione o pão</option>
                     <option v-for="bread in bdBreads" :value="bread.tipo" :key="bread.id"> {{ bread.tipo }}</option>
                 </select>
             </div>
@@ -34,7 +34,7 @@
                         v-model="meat"
                         required
                     >
-                    <option value="" disabled>Selecione a carne</option>
+                    <option :value="null" disabled>Selecione a carne</option>
                     <option v-for="meat in bdMeats" :value="meat.tipo" :key="meat.id"> {{ meat.tipo }} </option>
                 </select>
             </div>
